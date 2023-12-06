@@ -374,7 +374,7 @@ button:hover {
 .inner {
     margin-top: 50px;
     height: 60vh;
-    width: 35vw;
+    width: 40vw;
     /* border: 2px solid green; */
     display: flex;
     flex-direction: row-reverse;
@@ -406,30 +406,30 @@ button:hover {
 
 .project1 img {
     height: 100%;
-    width: 80%;
+    max-width: 85%;
     border-radius: 4px;
     margin-left: 15px;
 }
 
 .project2 img {
     height: 100%;
-    width: 80%;
+    max-width: 75%;
     border-radius: 4px;
     margin-left: 15px;
 }
 
 .project3 img {
-    height: 100%;
-    width: 80%;
+    height: 90%;
+    max-width: 60%;
     border-radius: 4px;
-    margin-left: 15px;
+    margin-left: 25px;
 }
 
 .project4 img {
     height: 100%;
-    width: 80%;
+    max-width: 80%;
     border-radius: 4px;
-    margin-left: 15px;
+    margin-left: 25px;
 }
 
 /*projects-section-end*/
@@ -609,6 +609,13 @@ button:hover {
         flex-wrap: wrap;
         height: 40vh;
     }
+    .project2 img {
+        margin-left: 40px;
+    }
+    .project3 img {
+     max-width: 75%;   
+     margin-left: 40px;
+    }
 
 }
 
@@ -630,4 +637,15 @@ button:hover {
     #bar {
         display: block;
     }
+
+    .project3 img {
+        max-height: 100%;
+        max-width: 80%;   
+        margin-left: 25px;
+    }
+    .project2 img {
+        max-width: 75%;   
+        margin-left: 25px;
+       }
+    
 }
