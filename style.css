@@ -469,7 +469,7 @@ button:hover {
 .fa-envelope::before {
     margin-left: 125px;
 }
-.fa-linkedin-in:before {
+.mail.fa-linkedin-in:before {
     margin-left: 65px;
 }
 
@@ -652,6 +652,22 @@ button:hover {
     .project2 img {
         max-width: 75%;   
         margin-left: 25px;
-       }
+    }
+
+    .fa-envelope::before {
+        margin-left: 105px;
+    }
+
+    .mail.fa-linkedin-in:before {
+        margin-left: 105px;
+    }
+    .fa-linkedin-in a{
+        margin-left: 38px;
+    }
+
+    .phone {
+        margin-left: 12px;
+        font-size: 1rem;
+    }
     
 }
