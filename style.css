@@ -474,10 +474,11 @@ button:active {
     border-radius: 4px;
     margin-left: 15px;
     cursor: pointer;
+    transition: 1s ease-in-out;
 }
 
 .project1 img:hover {
-    transform: scale(1.8);
+    transform: scale(1.5);
 }
 
 .project2 img {
@@ -485,11 +486,12 @@ button:active {
     max-width: 75%;
     border-radius: 4px;
     margin-left: 15px;
+    transition: 1s ease-in-out;
     cursor: pointer;
 }
 
 .project2 img:hover {
-    transform: scale(1.8);
+    transform: scale(1.5);
 }
 
 .project3 img {
@@ -497,12 +499,13 @@ button:active {
     max-width: 60%;
     border-radius: 4px;
     margin-left: 25px;
+    transition: 1s ease-in-out;
     cursor: pointer;
 
 }
 
 .project3 img:hover {
-    transform: scale(1.8);
+    transform: scale(1.6);
 }
 
 .project4 img {
@@ -510,12 +513,13 @@ button:active {
     max-width: 80%;
     border-radius: 4px;
     margin-left: 25px;
+    transition: 1s ease-in-out;
     cursor: pointer;
 
 }
 
 .project4 img:hover {
-    transform: scale(1.8);
+    transform: scale(2);
 }
 
 /*projects-section-end*/
