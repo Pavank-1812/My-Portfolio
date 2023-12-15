@@ -20,7 +20,7 @@
 }
 
 .sub-header {
-    height: 3vh;
+    height: 4vh;
     width: 100%;
     background: #f75023;
     position: absolute;
@@ -34,7 +34,7 @@
     height: 80px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 0 8%;
     background: #f7f7f7;
@@ -46,6 +46,7 @@
 
 .nav .logo {
     height: 90%;
+    margin-right: auto;
 }
 
 .nav .logo img {
@@ -97,14 +98,20 @@ button {
     cursor: pointer;
     -webkit-text-stroke-width: 0.2px;
     position: relative;
+    transition: all 0.3s ease 0s;
     /* margin-top: 1rem; */
 }
 
 button:hover {
     background-color: #f75023;
+    transform: translateY(-7px);
 }
 
-.nav .fa-bars {
+button:active {
+    transform: translateY(-1px);
+}
+
+/* .nav .fa-bars {
     padding: 12px;
     font-size: 1.3rem;
     background-color: #53515E;
@@ -115,7 +122,62 @@ button:hover {
 
 .nav .fa-bars:hover {
     background-color: #f75023;
+} */
+
+/*updated-menu-start*/
+#checkbox {
+    display: none;
 }
+
+.toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: .3s;
+    display: none;
+}
+
+.bars {
+    width: 100%;
+    height: 4px;
+    /* background-color: #6D6A7C; */
+    background-color: orangered;
+    border-radius: 5px;
+    transition-duration: .3s;
+}
+
+#checkbox:checked+.toggle #bar2 {
+    transform: translateY(14px) rotate(60deg);
+    margin-left: 0;
+    transform-origin: right;
+    transition-duration: .3s;
+    z-index: 2;
+    background-color: #6D6A7C;
+}
+
+#checkbox:checked+.toggle #bar1 {
+    background-color: #6D6A7C;
+    transform: translateY(28px) rotate(-60deg);
+    transition-duration: .3s;
+    transform-origin: left;
+    z-index: 1;
+}
+
+#checkbox:checked+.toggle #bar3 {
+    background-color: #6D6A7C;
+}
+
+#checkbox:checked+.toggle {
+    transform: rotate(-90deg);
+}
+/*updated-menu-end*/
+
 
 .hero {
     width: 100%;
@@ -176,6 +238,7 @@ button:hover {
     background-color: #1c1c1c;
     position: relative;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
 
 .social .icon:hover {
@@ -328,6 +391,7 @@ button:hover {
     padding: 4px;
     border-radius: 4px;
     color: #FFF;
+    transition: all 0.3s ease 0s;
 }
 
 .skill:hover {
@@ -409,6 +473,11 @@ button:hover {
     max-width: 85%;
     border-radius: 4px;
     margin-left: 15px;
+    cursor: pointer;
+}
+
+.project1 img:hover {
+    transform: scale(1.8);
 }
 
 .project2 img {
@@ -416,6 +485,11 @@ button:hover {
     max-width: 75%;
     border-radius: 4px;
     margin-left: 15px;
+    cursor: pointer;
+}
+
+.project2 img:hover {
+    transform: scale(1.8);
 }
 
 .project3 img {
@@ -423,6 +497,12 @@ button:hover {
     max-width: 60%;
     border-radius: 4px;
     margin-left: 25px;
+    cursor: pointer;
+
+}
+
+.project3 img:hover {
+    transform: scale(1.8);
 }
 
 .project4 img {
@@ -430,6 +510,12 @@ button:hover {
     max-width: 80%;
     border-radius: 4px;
     margin-left: 25px;
+    cursor: pointer;
+
+}
+
+.project4 img:hover {
+    transform: scale(1.8);
 }
 
 /*projects-section-end*/
@@ -466,9 +552,11 @@ button:hover {
 .contact-icon {
     font-size: 2rem;
 }
+
 .fa-envelope::before {
     margin-left: 125px;
 }
+
 .mail.fa-linkedin-in:before {
     margin-left: 65px;
 }
@@ -489,7 +577,7 @@ button:hover {
 
 /*contactme-section-end*/
 
-#bar {
+.bar {
     display: none;
 }
 
@@ -573,8 +661,24 @@ button:hover {
 }
 
 @media screen and (max-width:900px) {
-    .nav .fa-bars {
+    .sub-header{
+        height: 4vh;
+    }
+    .nav .toggle {
         display: block;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transition-duration: .3s;
+    }
+    #pro4{
+        margin-top: -50px;
     }
 
     ul {
@@ -615,12 +719,14 @@ button:hover {
         flex-wrap: wrap;
         height: 40vh;
     }
+
     .project2 img {
         margin-left: 40px;
     }
+
     .project3 img {
-     max-width: 75%;   
-     margin-left: 40px;
+        max-width: 75%;
+        margin-left: 40px;
     }
 
 }
@@ -640,17 +746,19 @@ button:hover {
         flex-wrap: wrap;
         height: 40vh;
     }
-    #bar {
+
+    .bar {
         display: block;
     }
 
     .project3 img {
         max-height: 100%;
-        max-width: 80%;   
+        max-width: 80%;
         margin-left: 25px;
     }
+
     .project2 img {
-        max-width: 75%;   
+        max-width: 75%;
         margin-left: 25px;
     }
 
@@ -661,13 +769,14 @@ button:hover {
     .mail.fa-linkedin-in:before {
         margin-left: 105px;
     }
-    .fa-linkedin-in a{
+
+    .fa-linkedin-in a {
         margin-left: 38px;
     }
 
-    .phone p{
+    .phone p {
         margin-left: 35px;
         font-size: 1.2rem;
     }
-    
+
 }
