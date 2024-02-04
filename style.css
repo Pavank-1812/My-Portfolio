@@ -736,6 +736,10 @@ button:active {
 }
 
 @media screen and (max-width:768px) {
+    .sub-header{
+        height: 4vh;
+    }
+
     .hero-image {
         width: 100%;
     }
