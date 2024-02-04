@@ -737,8 +737,8 @@ button:active {
 
 @media screen and (max-width:768px) {
     .sub-header{
-        height: 3vh;
-        padding-top: 5px;
+        height: auto;
+        padding-top: auto;
     }
 
     .hero-image {
