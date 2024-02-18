@@ -7,7 +7,8 @@ bars.addEventListener("click", function(){
 //made my role as dynamic text
 const headingText = "MERN Stack Developer";
 const Welcome = "Hey👋! Welcome to My Portfolio";
-const typingSpeed = 40; // Adjust typing speed as needed
+const headingTypingSpeed = 110; // Typing speed for heading
+const welcomeTypingSpeed = 60; // Typing speed for welcome message
 let headingIndex = 0;
 let welcomeIndex = 0;
 
@@ -23,9 +24,9 @@ function typeHeading() {
                 document.getElementById("typing-heading").innerHTML = headingText.substring(0, headingIndex + 1).replace('|', '');
                 headingIndex++;
                 // Call typeHeading again for the next character
-                setTimeout(typeHeading, typingSpeed);
-            }, typingSpeed);
-        }, typingSpeed);
+                setTimeout(typeHeading, headingTypingSpeed);
+            }, headingTypingSpeed);
+        }, headingTypingSpeed);
     }
 }
 
@@ -41,9 +42,9 @@ function welcome() {
                 document.getElementById("WELCOME").innerHTML = Welcome.substring(0, welcomeIndex + 1).replace('|', '');
                 welcomeIndex++;
                 // Call welcome again for the next character
-                setTimeout(welcome, typingSpeed);
-            }, typingSpeed);
-        }, typingSpeed);
+                setTimeout(welcome, welcomeTypingSpeed);
+            }, welcomeTypingSpeed);
+        }, welcomeTypingSpeed);
     }
 }
 
@@ -52,5 +53,6 @@ window.onload = function() {
     typeHeading();
     welcome();
 };
+
 
 
