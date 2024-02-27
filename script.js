@@ -5,7 +5,7 @@ bars.addEventListener("click", function(){
 })
 
 //made my role as dynamic text
-const headingText = "MERN Stack Developer";
+const headingText = "Frontend Developer";
 const Welcome = "Hey👋! Welcome to My Portfolio";
 const headingTypingSpeed = 110; // Typing speed for heading
 const welcomeTypingSpeed = 60; // Typing speed for welcome message
