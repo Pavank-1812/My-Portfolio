@@ -787,5 +787,8 @@ button:active {
         margin-left: 35px;
         font-size: 1.2rem;
     }
+    .hero .content {
+        margin-top: 10px;
+    }
 
 }
