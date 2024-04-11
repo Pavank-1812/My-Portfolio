@@ -222,11 +222,14 @@ button:active {
   color: #4db5ff;
 }
 
-.content p,
-.content p span {
+.content p{
   font-size: 18px;
   /* color: hsla(0, 0, 100%, .6); */
   color: #fff;
+}
+.content p span {
+  font-size: 18px;
+  color: #4db5ff;
 }
 
 .social {
@@ -316,7 +319,7 @@ button:active {
   font-size: 19px;
 }
 .section-description p span {
-  color: orangered;
+  color: #4db5ff;
 }
 
 .about {
