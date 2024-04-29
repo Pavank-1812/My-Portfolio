@@ -41,7 +41,7 @@
   backdrop-filter: blur(15px);
   /* border-bottom: 2px solid rgba(0,0,0,0.3); */
   /* background: #1f1f38; */
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   z-index: 1;
   /* left: 150px; */
@@ -49,6 +49,15 @@
   /* border-top-right-radius: 30px; */
   /* border-bottom-left-radius: 30px; */
   /* border-bottom-right-radius: 30px; */
+}
+#top {
+  width: 70px;
+  height: 50px;
+  padding: 10px;
+  position: absolute;
+  right:20px;
+  bottom: 20px;
+  background-color: #4db5ff;
 }
 .nav h2 {
   margin-top: 20px;
@@ -534,6 +543,7 @@ button:active {
 
 #contact {
   background-color: #2c2c6c;
+  position: relative;
 }
 
 .contact {
