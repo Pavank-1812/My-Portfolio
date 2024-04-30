@@ -131,19 +131,6 @@ button:active {
   background-color: #1f1f38;
 }
 
-/* .nav .fa-bars {
-    padding: 12px;
-    font-size: 1.3rem;
-    background-color: #53515E;
-    color: #fff;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.nav .fa-bars:hover {
-    background-color: #f75023;
-} */
-
 /*updated-menu-start*/
 #checkbox {
   display: none;
@@ -531,7 +518,7 @@ button:active {
 
 .inner {
   margin-top: 50px;
-  height: 60vh;
+  height: 70vh;
   width: 40vw;
   /* border: 2px solid green; */
   display: flex;
@@ -556,64 +543,6 @@ button:active {
 .link p {
   color: #fff;
 }
-
-/* .projects {
-  height: 30vh;
-  width: 20vw;
-  border: 2px solid blue;
-} */
-
-/* .project1 img {
-  height: 100%;
-  max-width: 85%;
-  border-radius: 12px;
-  margin-left: 15px;
-  cursor: pointer;
-  transition: 1s ease-in-out;
-}
-
-.project1 img:hover {
-  transform: scale(1.6);
-}
-
-.project2 img {
-  height: 100%;
-  max-width: 75%;
-  border-radius: 18px;
-  margin-left: 15px;
-  transition: 1s ease-in-out;
-  cursor: pointer;
-}
-
-.project2 img:hover {
-  transform: scale(1.7);
-}
-
-.project3 img {
-  height: 100%;
-  max-width: 85%;
-  border-radius: 5px;
-  margin-left: 25px;
-  transition: 1s ease-in-out;
-  cursor: pointer;
-}
-
-.project3 img:hover {
-  transform: scale(1.7);
-}
-
-.project4 img {
-  height: 100%;
-  max-width: 80%;
-  border-radius: 18px;
-  margin-left: 25px;
-  transition: 1s ease-in-out;
-  cursor: pointer;
-}
-
-.project4 img:hover {
-  transform: scale(1.7);
-} */
 
 /*projects-section-end*/
 
@@ -749,10 +678,10 @@ button:active {
     width: 25vw;
   }
 
-  .proj {
+  /* .proj {
     width: 100%;
     font-size: 10px;
-  }
+  } */
 
   .outer {
     width: 100%;
@@ -765,14 +694,12 @@ button:active {
 
   .inner {
     flex-wrap: wrap;
+    height: 400px;
+    width: 400px;
   }
   .proj {
     width: 100px;
   }
-  /* .nav {
-        left: 10%;
-        z-index: 1;
-        } */
 }
 
 @media screen and (max-width: 1000px) {
@@ -848,6 +775,41 @@ button:active {
   }
   .proj {
     width: 100px;
+  }
+  #skills {
+    margin-top: 0;
+    margin-top: 20px;
+    height: 55vh;
+  }
+  .tech-stack {
+    margin-top: 20px;
+  }
+
+  #projects {
+    height: 310vh;
+    /* margin-top: 10px; */
+  }
+  .outer {
+    /* height: 400px; */
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .inner {
+    height: 400px;
+    width: 400px;
+    flex-direction: row-reverse;
+  }
+  .link {
+    /* border: 2px solid pink; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 80px;
+    padding: 0;
+
   }
 
   /* .project2 img {
