@@ -199,7 +199,7 @@ button:active {
   flex-direction: column;
   align-items: flex-start;
   text-align: justify;
-  margin-top: 125px;
+  /* margin-top: 125px; */
   width: 50%;
   gap: 15px;
 }
@@ -286,16 +286,16 @@ button:active {
   color: #fff;
 }
 
-.hero-image {
+/* .hero-image {
   width: 500px;
   height: 500px;
   margin-top: 40px;
-}
+} */
 
 .hero-image img {
   height: 500px;
   width: 400px;
-  margin-left: 3rem;
+  /* margin-left: 1rem; */
 }
 
 /*About-section-start*/
@@ -786,7 +786,7 @@ button:active {
   }
 
   #projects {
-    height: 310vh;
+    height: 300vh;
     /* margin-top: 10px; */
   }
   .outer {
@@ -869,7 +869,7 @@ button:active {
   }
 
   #projects {
-    height: 310vh;
+    height: 310vh; /* check this height*/
     /* margin-top: 10px; */
   }
   .outer {
