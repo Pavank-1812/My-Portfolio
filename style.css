@@ -13,6 +13,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   min-height: 100vh;
   width: 100%;
